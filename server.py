@@ -29,8 +29,8 @@ def main():
     if len(sys.argv) != 2:
         print("usage: python -B server.py <filename>.html")
         return
-    fname = sys.argv[1]
     
+    fname = sys.argv[1]
     app = Flask(__name__)
 
     @app.route('/<path:path>', methods=['GET'])
