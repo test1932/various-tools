@@ -49,7 +49,7 @@ def main():
     
     serverThread = threading.Thread(None, runServer, "server", [])
     serverThread.start()
-    webbrowser.open(f"http://127.0.0.1:8080/{fname}", new = 0)
+    webbrowser.open(f"http://127.0.0.1:{PORT}/{fname}", new = 0)
     serverThread.join()
 
 if __name__ == '__main__':
