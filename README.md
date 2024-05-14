@@ -1,6 +1,7 @@
 To run on Linux:
 
     make
+    . venv/bin/activate
     python -B server.py <filename>.html
 
 To run on Windows (manual version of makefile):
